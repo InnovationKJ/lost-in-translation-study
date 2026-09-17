@@ -135,6 +135,32 @@
     font-size: 13px;
     color: var(--muted);
   }
+  .viewer-label {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 48px 0 14px;
+  }
+  .pdf-viewer {
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card-bg);
+  }
+  .pdf-fallback {
+    display: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: var(--muted);
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--card-bg);
+  }
 </style>
 </head>
 <body>
@@ -175,6 +201,13 @@
       <div><strong>Author:</strong> Karen Jensen, Senior AI Ethics Architect &mdash; Global Ethics &amp; Culture Team, Women in AI</div>
       <div><strong>Topics:</strong> LLM translation quality, linguistic sovereignty, Bias Laundering, Human-in-the-Loop evaluation</div>
     </div>
+
+    <div class="viewer-label">Read the Full Paper</div>
+    <iframe class="pdf-viewer" src="paper.pdf" title="Lost in Translation: An Autonomous AI and Language Translation Study — full paper PDF">
+      <p class="pdf-fallback" style="display:block;">
+        Your browser can't display the embedded PDF. Use the download button above to read the full paper.
+      </p>
+    </iframe>
 
     <footer>
       &copy; 2026 Karen Jensen. Shared for research and educational purposes.
